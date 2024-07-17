@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./docker/Dockerfile.userApp
+          file: ./docker/DockerFile.userApp
           push: true
           tags: devpathak9225/paytm-nextjs:latest # Replace with your Docker Hub username and repository
 
