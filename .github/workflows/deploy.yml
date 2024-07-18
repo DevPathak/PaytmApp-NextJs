@@ -39,4 +39,4 @@ jobs:
             sudo docker pull devpathak9225/paytm-nextjs:latest
             sudo docker stop web-app || true
             sudo docker rm web-app || true
-            sudo docker run -d --name web-app -p 3005:3000 devpathak9225/paytm-nextjs:latest
+            sudo docker run -d -e JWT_SECRET=${{ secrets.JWT_SECRET }} -e DATABASE_URL=${{ secrets.DATABASE_URL }} -e NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }} --name web-app -p 3005:3000 devpathak9225/paytm-nextjs:latest
