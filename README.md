@@ -1,5 +1,5 @@
 # PaytmApp-NextJs
-=======
+
 - Clone the repo
 
 ```jsx
